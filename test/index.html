@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - Persona</title>
+    
+</html>
+
+<input type="radio" name="banner" id="imagen1" class="input-imagen" checked>
+    <input type="radio" name="banner" id="imagen2" class="input-imagen">
+    <input type="radio" name="banner" id="imagen3" class="input-imagen">
+
+    <div class="banner">
+        <img src="imagen1.jpg" id="imagen1Banner" alt="Imagen 1">
+        <img src="imagen2.jpg" id="imagen2Banner" alt="Imagen 2">
+        <img src="imagen3.jpg" id="imagen3Banner" alt="Imagen 3">
+    </div>
+
+    <ul class="lista">
+        <li><label for="imagen1">Elemento 1</label></li>
+        <li><label for="imagen2">Elemento 2</label></li>
+        <li><label for="imagen3">Elemento 3</label></li>
+    </ul>
+
+    <style>.banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .banner img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .input-imagen:checked + .banner #imagen1Banner,
+    .input-imagen:checked + .banner #imagen2Banner,
+    .input-imagen:checked + .banner #imagen3Banner {
+        opacity: 1;
+    }
+    
+    .lista {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .lista li {
+        margin-bottom: 10px;
+    }
+    
+    .lista li label {
+        cursor: pointer;
+        color: blue;
+    }
+    
+    .lista li label:hover {
+        color: red;
+    }
+    
+
+
+    </style>
