@@ -774,5 +774,104 @@ input[type="submit"]:hover {
 }
 
 
+/*---------------Producto 3---------------------*/
+
+.P3video{
+  position: absolute;
+  height: 100%;
+  z-index: -3;
+}
+
+
+.wrapperP3{
+  align-self: center;
+  width: 100%;
+  max-width: 60rem;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperP3 a{
+  width: 40%;
+}
+
+.logoBuy{
+  display: flex;
+  align-items: center;
+  transform: translateX(-50px);
+}
+
+.wrapperP3 a img{
+  max-width: 100%;
+}
+.wrapperP3 .mainimg{
+  width: 55%;
+}
+
+.wrapperP3-container{
+  align-items: center;
+ display: flex;
+ flex-flow: column nowrap;
+}
+.wrapperP3-container-img1{
+  transform: translateX(-50px);
+  width: 100%;
+}
+
+.wrapperP3-container-img2{
+  width: 70%;
+}
+
+.wrapperP3-container .P5box{
+  height: 100%;
+}
+
+.P5box{
+  height: 100%;
+  border: 2px solid #fff;
+}
+
+.comprap4{
+  width: 120%;
+  transform: translateX(-50px);
+}
+
+.boton-carritoP3 {
+  
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+  background-color: #000000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transform: skewX(-20deg);
+}
+
+.boton-carritoP3:hover {
+  background-color: #6c0000; /* Color de fondo del botón al pasar el ratón */
+}
+
+.boton-carritoP3 i {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.fondoP3{
+  position: absolute;
+  z-index: -1;
+  height: 120%;
+}
+
+.clickHere{
+  height: 3rem;
+  min-width: 7rem;
+}
+
+
 /*---------------ACERCA DE---------------------*/
 
