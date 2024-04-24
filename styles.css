@@ -248,7 +248,7 @@ h2 {
   align-items: start;
   display: flex;
   flex-flow: row nowrap;
-  text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white,
+  text-shadow:  -1px -1px 1px white, 
     -1px 1px 1px white;
 }
 
@@ -507,10 +507,10 @@ h1,
 h2 {
   color: #ffffff;
   text-shadow:
-    -1px -1px 0 #3bb900,
-    1px -1px 0 #3bb900,
-    -1px 1px 0 #3bb900,
-    1px 1px 0 #3bb900;
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
 
 }
 
@@ -684,6 +684,9 @@ input[type="submit"]:hover {
 }
 
 .wrapperP2{
+  align-self: center;
+  width: 100%;
+  max-width: 60rem;
   position: relative;
   display: flex;
   flex-flow: row nowrap;
