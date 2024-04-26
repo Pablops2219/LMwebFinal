@@ -248,7 +248,7 @@ h2 {
   align-items: start;
   display: flex;
   flex-flow: row nowrap;
-  text-shadow:  -1px -1px 1px white, 
+  text-shadow: -1px -1px 1px white,
     -1px 1px 1px white;
 }
 
@@ -474,7 +474,7 @@ a {
   border-radius: 10px;
   width: 100%;
   position: absolute;
-  transform: translateY(220px) translateX(-10px);
+  transform: translateY(70%);
   background-color: rgb(28, 241, 0);
 }
 
@@ -527,12 +527,14 @@ h2 {
   border-radius: 10px;
 }
 
-.container h1, .container h2 {
+.container h1,
+.container h2 {
   font-family: JetBrains Mono;
   text-align: center;
 }
 
-input[type="text"],input[type="email"],
+input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -543,7 +545,7 @@ textarea {
   resize: none;
 }
 
-.grupo-input{
+.grupo-input {
   max-width: 95%;
 }
 
@@ -565,7 +567,8 @@ input[type="submit"]:hover {
 
 /*--------------PRODUCTO1---------------------------------------*/
 
-.wrapper{
+.wrapper {
+  max-width: 50rem;
   position: relative;
   display: flex;
   flex-flow: row nowrap;
@@ -573,60 +576,86 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
-.wrapper .mainimg{
+.wrapper .mainimg {
   width: 50%;
 }
 
-.wrapper-container{
+.wrapper-container {
   align-items: center;
- display: flex;
- flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
-.wrapper-container-img1{
+
+.wrapper-container-img1 {
   width: 100%;
 }
 
-.wrapper-container-img2{
+.wrapper-container-img2 {
   width: 70%;
 }
 
-.wrapper-container .P5box{
+.wrapper-container .P5box {
   height: 100%;
 }
 
-.P5box{
+.P5box {
   height: 100%;
   border: 2px solid #fff;
 }
 
-.comprap5{
+.comprap5 {
   width: 130%;
 }
 
 
 @keyframes moverEsquina1 {
-  0% { clip-path: polygon(0% 13%, 95% 20%, 100% 90%, 10% 90%); }
-  50% { clip-path: polygon(5% 15%, 100% 20%, 95% 85%, 10% 85%); }
-  100% { clip-path: polygon(0% 13%, 95% 20%, 100% 90%, 10% 90%); }
+  0% {
+    clip-path: polygon(0% 13%, 95% 20%, 100% 90%, 10% 90%);
+  }
+
+  50% {
+    clip-path: polygon(5% 15%, 100% 20%, 95% 85%, 10% 85%);
+  }
+
+  100% {
+    clip-path: polygon(0% 13%, 95% 20%, 100% 90%, 10% 90%);
+  }
 }
 
 @keyframes moverEsquina2 {
-  0% { clip-path: polygon(15% 10%, 100% 14%, 95% 95%, 5% 90%); }
-  50% { clip-path: polygon(10% 12%, 100% 16%, 90% 90%, 5% 88%); }
-  100% { clip-path: polygon(15% 10%, 100% 14%, 95% 95%, 5% 90%); }
+  0% {
+    clip-path: polygon(15% 10%, 100% 14%, 95% 95%, 5% 90%);
+  }
+
+  50% {
+    clip-path: polygon(10% 12%, 100% 16%, 90% 90%, 5% 88%);
+  }
+
+  100% {
+    clip-path: polygon(15% 10%, 100% 14%, 95% 95%, 5% 90%);
+  }
 }
 
 @keyframes moverEsquina3 {
-  0% { clip-path: polygon(7% 12%, 95% 12%, 100% 100%, 2% 95%); }
-  50% { clip-path: polygon(5% 12%, 95% 10%, 100% 100%, 0% 90%); }
-  100% { clip-path: polygon(7% 12%, 95% 12%, 100% 100%, 2% 95%); }
+  0% {
+    clip-path: polygon(7% 12%, 95% 12%, 100% 100%, 2% 95%);
+  }
+
+  50% {
+    clip-path: polygon(5% 12%, 95% 10%, 100% 100%, 0% 90%);
+  }
+
+  100% {
+    clip-path: polygon(7% 12%, 95% 12%, 100% 100%, 2% 95%);
+  }
 }
 
 .decobox1 {
   position: absolute;
   width: inherit;
   padding: 50%;
-  background-color: #d32f2f; /* Color de la caja roja */
+  background-color: #d32f2f;
+  /* Color de la caja roja */
   clip-path: polygon(0% 13%, 95% 20%, 100% 90%, 10% 90%);
   z-index: -7;
   animation: moverEsquina1 2s ease-in-out infinite;
@@ -636,7 +665,8 @@ input[type="submit"]:hover {
   position: absolute;
   width: inherit;
   padding: 50%;
-  background-color: #000000; /* Color de la caja negra */
+  background-color: #000000;
+  /* Color de la caja negra */
   clip-path: polygon(15% 10%, 100% 14%, 95% 95%, 5% 90%);
   z-index: -8;
   animation: moverEsquina2 1s alternate infinite;
@@ -647,19 +677,23 @@ input[type="submit"]:hover {
   position: absolute;
   width: inherit;
   padding: 50%;
-  background-color: #d32f2f; /* Color de la caja roja */
+  background-color: #d32f2f;
+  /* Color de la caja roja */
   clip-path: polygon(7% 12%, 95% 12%, 100% 100%, 2% 95%);
   z-index: -9;
   animation: moverEsquina3 3s ease-in-out infinite;
 }
 
 .boton-carrito {
-  
+
   margin-top: 2rem;
   display: inline-block;
-  padding: 10px 20px; /* Ajusta el padding según tu preferencia */
-  background-color: #000000; /* Color de fondo del botón */
-  color: #ffffff; /* Color del texto */
+  padding: 10px 20px;
+  /* Ajusta el padding según tu preferencia */
+  background-color: #000000;
+  /* Color de fondo del botón */
+  color: #ffffff;
+  /* Color del texto */
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -668,22 +702,25 @@ input[type="submit"]:hover {
 }
 
 .boton-carrito:hover {
-  background-color: #6c0000; /* Color de fondo del botón al pasar el ratón */
+  background-color: #6c0000;
+  /* Color de fondo del botón al pasar el ratón */
 }
 
 .boton-carrito i {
-  margin-right: 5px; /* Espacio entre el icono y el texto */
+  margin-right: 5px;
+  /* Espacio entre el icono y el texto */
 }
 
 /*-----------------------PRODUCTO2-------------------------------*/
 
-.TV{
+.TV {
   position: absolute;
   z-index: -1;
   width: 120%;
 }
 
-.wrapperP2{
+.wrapperP2 {
+  max-width: 50rem;
   align-self: center;
   width: 100%;
   max-width: 60rem;
@@ -694,58 +731,63 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
-.wrapperP2 a{
+.wrapperP2 a {
   width: 40%;
 }
 
-.logoBuy{
+.logoBuy {
   display: flex;
   align-items: center;
   transform: translateX(-50px);
 }
 
-.wrapperP2 a img{
+.wrapperP2 a img {
   max-width: 100%;
 }
-.wrapperP2 .mainimg{
+
+.wrapperP2 .mainimg {
   width: 55%;
 }
 
-.wrapperP2-container{
+.wrapperP2-container {
   align-items: center;
- display: flex;
- flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
-.wrapperP2-container-img1{
+
+.wrapperP2-container-img1 {
   transform: translateX(-50px);
   width: 100%;
 }
 
-.wrapperP2-container-img2{
+.wrapperP2-container-img2 {
   width: 70%;
 }
 
-.wrapperP2-container .P5box{
+.wrapperP2-container .P5box {
   height: 100%;
 }
 
-.P5box{
+.P5box {
   height: 100%;
   border: 2px solid #fff;
 }
 
-.comprap4{
+.comprap4 {
   width: 120%;
   transform: translateX(-50px);
 }
 
 .boton-carritoP2 {
-  
+
   margin-top: 2rem;
   display: inline-block;
-  padding: 10px 20px; /* Ajusta el padding según tu preferencia */
-  background-color: #000000; /* Color de fondo del botón */
-  color: #ffffff; /* Color del texto */
+  padding: 10px 20px;
+  /* Ajusta el padding según tu preferencia */
+  background-color: #000000;
+  /* Color de fondo del botón */
+  color: #ffffff;
+  /* Color del texto */
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -754,21 +796,23 @@ input[type="submit"]:hover {
 }
 
 .boton-carritoP2:hover {
-  background-color: #6c0000; /* Color de fondo del botón al pasar el ratón */
+  background-color: #6c0000;
+  /* Color de fondo del botón al pasar el ratón */
 }
 
 .boton-carritoP2 i {
-  margin-right: 5px; /* Espacio entre el icono y el texto */
+  margin-right: 5px;
+  /* Espacio entre el icono y el texto */
 }
 
-.fondoP2{
+.fondoP2 {
   position: absolute;
   z-index: -1;
   height: 120%;
 }
 
 
-.logoBuy a:hover{
+.logoBuy a:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
@@ -776,14 +820,13 @@ input[type="submit"]:hover {
 
 /*---------------Producto 3---------------------*/
 
-.P3video{
+.P3video {
   position: absolute;
-  height: 100%;
   z-index: -3;
 }
 
 
-.wrapperP3{
+.wrapperP3 {
   align-self: center;
   width: 100%;
   max-width: 60rem;
@@ -794,58 +837,64 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
-.wrapperP3 a{
+.wrapperP3 a {
   width: 40%;
 }
 
-.logoBuy{
+.logoBuy {
   display: flex;
   align-items: center;
   transform: translateX(-50px);
 }
 
-.wrapperP3 a img{
+.wrapperP3 a img {
   max-width: 100%;
 }
-.wrapperP3 .mainimg{
+
+.wrapperP3 .mainimg {
   width: 55%;
 }
 
-.wrapperP3-container{
+.wrapperP3-container {
   align-items: center;
- display: flex;
- flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
-.wrapperP3-container-img1{
+
+.wrapperP3-container-img1 {
   transform: translateX(-50px);
   width: 100%;
 }
 
-.wrapperP3-container-img2{
+.wrapperP3-container-img2 {
   width: 70%;
+
 }
 
-.wrapperP3-container .P5box{
+.wrapperP3-container .P5box {
   height: 100%;
 }
 
-.P5box{
+.P5box {
   height: 100%;
   border: 2px solid #fff;
 }
 
-.comprap4{
+.comprap4 {
   width: 120%;
   transform: translateX(-50px);
 }
 
 .boton-carritoP3 {
-  
+
   margin-top: 2rem;
   display: inline-block;
-  padding: 10px 20px; /* Ajusta el padding según tu preferencia */
-  background-color: #000000; /* Color de fondo del botón */
-  color: #ffffff; /* Color del texto */
+  padding: 10px 20px;
+  /* Ajusta el padding según tu preferencia */
+  background-color: #000000;
+  /* Color de fondo del botón */
+  color: #ffffff;
+  /* Color del texto */
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -854,24 +903,247 @@ input[type="submit"]:hover {
 }
 
 .boton-carritoP3:hover {
-  background-color: #6c0000; /* Color de fondo del botón al pasar el ratón */
+  background-color: #6c0000;
+  /* Color de fondo del botón al pasar el ratón */
 }
 
 .boton-carritoP3 i {
-  margin-right: 5px; /* Espacio entre el icono y el texto */
+  margin-right: 5px;
+  /* Espacio entre el icono y el texto */
 }
 
-.fondoP3{
+.fondoP3 {
   position: absolute;
   z-index: -1;
-  height: 120%;
+  height: 100%;
 }
 
-.clickHere{
-  height: 3rem;
+.clickHere {
+  height: 2rem;
   min-width: 7rem;
 }
 
+.nowP3 {
+  position: absolute;
+  content: url("https://persona.atlus.com/p3r/media/img/ss-bg.svg");
+  transform: translateX(-20px) scale(1.4);
+  z-index: 0;
+}
+
+.nowP3h1 {
+  font-family: serif;
+  transform: translateX(-30px) translateY(-30px);
+  width: 100%;
+  text-align: start;
+  z-index: 2;
+}
+
+.wrapper-container h1 {
+
+  font-size: 100%;
+}
+
+.centerfix {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /*---------------ACERCA DE---------------------*/
 
+.AcercaIMG{
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+
+.bottom-info-ss{
+  position: absolute;
+  z-index: -1;
+}
+
+.centerfix .bottom-info-box {
+  display: flex;
+  max-width: 55rem;
+  width: 90%;
+  position: relative;
+  margin: -100px auto 0;
+  padding-top: 80px;
+  margin-bottom: 60px;
+}
+
+.centerfix .bottom-info-box .bottom-info-text {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 70px;
+  max-width: 460px;
+  color: white;
+}
+
+.bottom-info-ss {
+
+  width: 50%;
+}
+
+.bottom-info-ss img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------- */
+
+:root {
+  --glow-hue: 222deg;
+  --shadow-hue: 180deg;
+  --spring-easing: linear(
+  0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+  1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+  1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+  0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+  0.998 84%, 1
+);
+  --spring-duration: 1.33s;
+}
+@property --shimmer {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 33deg;
+}
+
+@keyframes shimmer {
+  0% {
+      --shimmer: 0deg;
+  }
+  100% {
+      --shimmer: 360deg;
+  }
+}
+
+@keyframes shine {
+  0% {
+      opacity: 0;
+  }
+  15% {
+      opacity: 1;
+  }
+  55% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+@keyframes text {
+  0% {
+      background-position: 100% center;
+  }    
+  100% {
+      background-position: -100% center;
+  }    
+}
+
+main#app button {
+  color: var(--bg);
+  font-weight: 600;
+  /*     background-image: linear-gradient(90deg, #fcecfe, #fbf6e7, #e6fcf5); */
+  background-image: linear-gradient(
+      315deg,
+      #ffc4ec -10%,
+      #efdbfd 50%,
+      #ffedd6 110%
+  );
+  padding: .8em 1.4em;
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 -10px 20px -10px hsla(var(--shadow-hue),10%,90%,95%);
+  border-radius: 0.66em;
+  scale: 1;
+  transition: all var(--spring-duration) var(--spring-easing);
+}
+
+main#app button:hover:not(:active),
+main#app button.active {
+  transition-duration: calc(var(--spring-duration)*0.5);
+  scale: 1.2;
+  box-shadow: 0 4px 8px -2px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 0 0 transparent;
+}
+main#app button:active {
+  scale: 1.1;
+  transition-duration: calc(var(--spring-duration)*0.5);
+}
+
+.shimmer {
+  position: absolute;
+  inset: -40px;
+  border-radius: inherit;
+  mask-image: conic-gradient(
+      from var(--shimmer, 0deg),
+      transparent 0%,
+      transparent 10%,
+      black 36%,
+      black 45%,
+      transparent 50%,
+      transparent 60%,
+      black 85%,
+      black 95%,
+      transparent 100%
+  );
+  mask-size: cover;
+  mix-blend-mode: plus-lighter;
+  animation: shimmer 1s linear infinite both;
+}
+main#app button:hover .shimmer::before,
+main#app button:hover .shimmer::after,
+main#app button.active .shimmer::before,
+main#app button.active .shimmer::after {
+  opacity: 1;
+  animation: shine 1.2s ease-in 1 forwards;
+}
+.shimmer::before,
+.shimmer::after {
+  transition: all 0.5s ease;
+  opacity: 0;
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  mix-blend-mode: color;
+  inset: 40px;
+  pointer-events: none;
+}
+.shimmer::before {
+  box-shadow: 0 0 3px 2px hsl(var(--glow-hue) 20% 95%),
+      0 0 7px 4px hsl(var(--glow-hue) 20% 80%),
+      0 0 13px 4px hsl(var(--glow-hue) 50% 70%),
+      0 0 25px 5px hsl(var(--glow-hue) 100% 70%);
+  z-index: -1;
+}
+
+.shimmer::after {
+  box-shadow: inset 0 0 0 1px hsl(var(--glow-hue) 70% 95%),
+      inset 0 0 2px 1px hsl(var(--glow-hue) 100% 80%),
+      inset 0 0 5px 2px hsl(var(--glow-hue) 100% 70%);
+  z-index: 2;
+}
+
+main#app button .text {
+  color: black;
+  background-clip: text;
+  background-color: var(--bg);
+  background-image: linear-gradient(120deg, transparent, hsla(var(--glow-hue),100%,80%,0.66) 40%, hsla(var(--glow-hue),100%,90%,.9) 50%, transparent 52%);
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  background-position: center 200%;
+}
+
+main#app button:hover .text,
+main#app button.active .text {
+  animation: text .66s ease-in 1 both;
+}
+
+main#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
