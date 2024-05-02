@@ -7,4 +7,4 @@ git add .
 git commit -m "Commit automático: $(date)"
 
 # Subir los cambios al repositorio remoto
-git push origin main
+git push 
